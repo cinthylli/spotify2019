@@ -1,0 +1,24 @@
+$primary-color: gray;
+$seconday-color: white;
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700|Roboto:400,500,700,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    color:white;
+}
+
+.contenido{
+    padding-left:2%;
+    height: 80vh;
+    width: 80vw;
+    overflow: scroll;
+    scrollbar-color:#1ac055 black ;
+    color:white;
+    background-image: linear-gradient(to bottom, #1ac055, #0d9c49, #08793c, #0a582f, #0b3920, #0b2b19, #091e11, #001105, #000f04, #000d02, #000b01, #000800);
+    
+      
+}
+

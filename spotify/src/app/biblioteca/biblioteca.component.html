@@ -1,0 +1,16 @@
+<p>biblioteca works!</p>
+
+<h1>Disfruta de tu coleccion de canciones</h1>
+<p>Busca tu cancion favorita: </p>
+<input type="text" placeholder="Buscar cancion" [(ngModel)]="query" />
+<br>
+<div class="container" >
+    <div class="card" *ngFor="let song of cancionesBuscadas | search: query">
+        <div class="cover">
+            <img src="../../assets/img/caratulas/caratula_salsa.jpg" alt="caratula_salsa">
+        </div>
+        <div class="card-header">
+            {{song.title}} - SEGUIDORES: {{song.followers}}
+        </div>    
+    </div>
+</div>

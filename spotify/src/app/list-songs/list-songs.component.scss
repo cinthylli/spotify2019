@@ -1,0 +1,38 @@
+.container{
+    margin-bottom: 7px;
+    display: flex;
+    align-items: flex-start;
+    h1{
+        font-size: 36px;
+        font-weight: bolder;
+        margin: 0;
+        margin-bottom: 3px;
+    }
+    .card{
+        width: 160px;
+        margin-right: 8px;
+        .cover{
+            img{
+                height: 160px;
+                width: 160px;
+                object-fit: cover;
+            }
+        }
+        .coverRounded{
+            object-fit: cover;
+            img{
+                border-radius:50%;
+                height: 160px;
+                width: 160px;
+                }
+                
+        }
+        .card-header{
+            display: flex;
+            font-size: 14px;
+            font-weight: normal;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

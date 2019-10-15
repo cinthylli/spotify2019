@@ -1,0 +1,16 @@
+<div 
+  gdAreas="header content  | footer footer"
+  gdGap="0px"
+  gdRows="auto 50vw"
+  gdColumns="40vh 70vh" >
+  <div gdArea="header">
+    <app-menu *ngIf="router.url!='/login'"></app-menu>
+   </div>
+  <div gdArea="content" class="contenido">
+    <router-outlet></router-outlet>
+  </div>
+  <div gdArea="footer">
+    <app-footer *ngIf="router.url!='/login'"></app-footer>
+  </div>
+</div>
+

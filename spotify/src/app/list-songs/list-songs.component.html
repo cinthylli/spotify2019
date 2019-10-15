@@ -1,0 +1,11 @@
+<h1>Canciones Populares</h1>
+<div class="container">
+        <div class="card" *ngFor="let cancion of canciones">
+            <div class="cover">
+                <img src="../../assets/img/caratulas/caratula_salsa.jpg" alt="caratula_salsa">
+            </div>
+            <div class="card-header">
+                {{cancion.title}} - {{cancion.album}}
+            </div>    
+        </div>
+</div>

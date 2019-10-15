@@ -1,0 +1,11 @@
+<h1>Artistas Populares</h1>
+<div class="container">
+        <div class="card" *ngFor="let artist of artistas">
+            <div class="coverRounded">
+                <img src="../../assets/img/caratulas/caratula_salsa.jpg" alt="caratula_salsa">
+            </div>
+            <div class="card-header">
+                {{artist.nombre}}
+            </div>    
+        </div>
+</div>

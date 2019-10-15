@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo__container">
+            <div class="logo">
+                <img src="../../assets/img/Spotify_Logo_RGB_White.png" alt="">
+            </div>
+            <hr>
+        
+        </div>
+        
+        <div class="login__container">
+                <h2>Para continuar, inicia sesión en Spotify.</h2>
+                <button><h2>INICIA CON FACEBOOK</h2></button>
+                <hr>
+                <form class="login__container--form"  action="">
+        
+                    <input [(ngModel)]="email" [ngModelOptions]="{standalone: true}" autofocus required type="text" class="input" placeholder="Correo" autocomplete="email"/>
+                    <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" required type="password" class="input" placeholder="Contraseña" autocomplete="current-password"/>
+                    <button class="button" (click)="login()">Iniciar sesion</button>
+                    <div class="login__container--remember-me">
+                        <label>
+                            <input  type="checkbox" id="cboxRememberMe" value="checkbox"> Recuerdame 
+                        </label>
+                        <a href="/">Olvide mi contraseña</a>
+                    </div>
+                </form>
+                <section class="login__container--social-media">
+                    <div>
+                        <img class="logo" src="../../assets/img/google.png" alt="Google"> Inicia sesion con Google
+                    </div>
+                    <div>
+                        <img class="logo" src="../../assets/img/twitter.png" alt="Twitter"> Inicia sesion con Twitter
+                    </div>
+                </section>
+                <p class="login__container--register">
+                    Si no tienes cuenta,<a  (click)="register()" href="/">Registrate</a>
+                </p>
+            </div>
+    
+    </div>
+</body>
+</html>
+
